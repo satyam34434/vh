@@ -1,0 +1,137 @@
+.section-area {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+  }
+  
+  .account-wraper2 {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+  }
+  
+  .appointment-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-form h6 {
+    margin-bottom: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgotPass {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .forgotPass input[type='email'] {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .forgotPass button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .forgotPass button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Your additional styles */
+  .banner-wraper {
+    /* Add your styles here */
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .team-media img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .team-info {
+    margin-top: 15px;
+  }
+  
+  .title {
+    margin-bottom: 5px;
+  }
+  
+  .text-secondary {
+    color: #888;
+  }
+  
+   
+   .team-info {
+     margin-top: 15px;
+   }
+   
+   .title {
+     margin-bottom: 5px;
+   }
+   
+  
+  

@@ -72,7 +72,7 @@ function Account() {
               <div className="row align-items-center">
                 <div className="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                   <div className="appointment-form form-wraper">
-                    <h3>Book Appointment</h3>
+                    <h3>Add Patient</h3>
                     <form action="#" onSubmit={handleSubmit}>
                       <div className="form-group">
                         <input

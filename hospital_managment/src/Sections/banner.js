@@ -248,7 +248,7 @@ function Banner() {
             <button>
               <Link to={"/about"}>Read More</Link>
             </button>
-            <button onClick={toggleForm}>Fill out Patient Form</button>
+            
           </div>
 
           <div className="col-lg-5 col-md-5 bannerImg">
@@ -256,45 +256,12 @@ function Banner() {
           </div>
         </div>
         {showForm && (
-          <div className="popup" style={popupStyles}>
+          <div className="popup">
             <div className="popup-content">
               <span className="close" onClick={toggleForm}>
                 &times;
               </span>
-              <form style={styles.form}>
-                <div style={styles.formGroup}>
-                  <label>First Name:</label>
-                  <input type="text" name="firstName" />
-                </div>
-                <div style={styles.formGroup}>
-                  <label>Last Name:</label>
-                  <input type="text" name="lastName" />
-                </div>
-                <div style={styles.formGroup}>
-                  <label>Age:</label>
-                  <input type="number" name="age" />
-                </div>
-                <div style={styles.formGroup}>
-                  <label>Gender:</label>
-                  <select name="gender">
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div style={styles.formGroup}>
-                  <label>Medical Condition:</label>
-                  <textarea name="condition" />
-                </div>
-                <div style={styles.formGroup}>
-                  <label>Contact Information:</label>
-                  <input type="text" name="contact" />
-                </div>
-                <button type="submit" style={styles.submitButton}>
-                  Submit
-                </button>
-              </form>
+             
             </div>
           </div>
         )}
@@ -303,36 +270,7 @@ function Banner() {
   );
 }
 
-const styles = {
-  form: {
-    marginTop: '20px',
-    padding: '20px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-  },
-  formGroup: {
-    marginBottom: '15px',
-  },
-  submitButton: {
-    backgroundColor: '#007bff',
-    color: '#fff',
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
-};
 
-const popupStyles = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  backgroundColor: '#fff',
-  padding: '20px',
-  borderRadius: '5px',
-  boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
-};
 
 export default Banner;
 

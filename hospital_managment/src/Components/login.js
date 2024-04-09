@@ -15,29 +15,33 @@ function Login() {
   const [form, setForm] = useState({ patientID: "", password: "" });
   const [email, setemail] = useState("");
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const adminCredentials = {
+    adminID: "admin", // Admin ID
+    password: "password123" // Admin password
+  };
+
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const navigate = useNavigate();
+
   const handleClick = (e) => {
     try {
-      dispatch(authLogin(form)).then((res) => {
-        if (res.message === "Login Successful.") {
-          notify("Login Successful.");
-          return navigate("/");
-        }
-        if (res.message === "Wrong credentials, Please try again.") {
-          return notify("Wrong credentials, Please try again.");
-        }
-        if (res.message === "Error occurred, unable to Login.") {
-        }
-      });
+      if (form.patientID === adminCredentials.adminID && form.password === adminCredentials.password) {
+        notify(`Admin ID: ${adminCredentials.adminID}\nPassword: ${adminCredentials.password}`);
+        return navigate("/");
+      } else {
+        notify("Wrong credentials, Please try again.");
+      }
     } catch (error) {
       console.log(error);
       return notify("Error occurred, unable to Login.");
     }
   };
+
   const [forgotLoading, setforgetLoading] = useState(false);
+
   const HandlePassword = () => {
     let data = { email, type: "patient" };
     setforgetLoading(true);
@@ -66,7 +70,7 @@ function Login() {
                 </div>
                 <form action="#">
                   <div className="form-group">
-                    <h6>Patient ID</h6>
+                    <h6>Admin ID</h6>
                     <input
                       name="patientID"
                       value={form.patientID}
@@ -89,7 +93,7 @@ function Login() {
                   </div>
                   <div className="form-group" onClick={handleClick}>
                     <Link
-                      type="botton"
+                      type="button"
                       className="btn mb-30 btn-lg btn-primary w-100"
                     >
                       Login
@@ -119,4 +123,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login;
